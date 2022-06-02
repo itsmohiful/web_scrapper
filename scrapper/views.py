@@ -25,3 +25,9 @@ def scraper(request):
         'data' : data
     }
     return render(request,'scraper/result.html',context)
+
+
+    def clear(request):
+    Link.objects.all().delete()
+    return render(request,'scraper/result.html')
+
