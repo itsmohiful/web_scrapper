@@ -24,10 +24,10 @@ def scraper(request):
     context = {
         'data' : data
     }
-    return render(request,'scraper/result.html',context)
+    return render(request,'scrapper/result.html',context)
 
 
 def clear(request):
     Link.objects.all().delete()
-    return render(request,'scraper/result.html')
+    return render(request,'scrapper/result.html')
 

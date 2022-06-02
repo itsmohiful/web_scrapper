@@ -10,12 +10,18 @@
 <body>
     <div class="container py-4">
         <div class="row">
+            <div class="col-6 offset-3 text-center">
+                <h4>Web Scrapping...</h4>
+                <p>Paste a link, hit scrap and wait a bit</p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-8 offset-md-1">
                 <form action="/" method="POST" class="form-group">
                     {% csrf_token %}
                     <div class="row">
                         <div class="col-md-10">
-                            <input type="text" class="form-control justify-self-start" name="site" id="site" placeholder="enter site address">
+                            <input type="text" class="form-control justify-self-start" name="site" id="site" placeholder="enter site address and wait a bit">
                         </div>
                         <div class="col-md-2">
                             <button type="submit" class="btn btn-info justify-self-end">Scrap</button>
